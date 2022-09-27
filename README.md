@@ -19,4 +19,5 @@ To run the code, simply download the lfw file from the source below and put that
 
 Sources
 Dataset: http://vis-www.cs.umass.edu/lfw/
+
 Research Paper: Heidari, Mohsen & Fouladi, Kazim. (2020). Using Siamese Networks with Transfer Learning for Face Recognition on Small-Samples Datasets. 1-4. 10.1109/MVIP49855.2020.9116915. 
