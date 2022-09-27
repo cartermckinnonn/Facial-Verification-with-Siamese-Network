@@ -1,4 +1,3 @@
-from gc import freeze
 import tensorflow as tf
 from tensorflow import keras
 from keras.applications import VGG16
