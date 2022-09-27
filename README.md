@@ -14,3 +14,9 @@ The process of finding the correct architecture for the embedding layer along wi
 For the embedding layer, I initially began by training my own deep Convolutional Neural Network from scratch, but I was not able to achieve satisfactory results from this. After doing more research, I discovered the process of transfer learning, and I implemented that process in my embedding layer. I used the pretrained Keras VGG16 model with "imagenet" weights. I froze all layers except for the last block, and I also added a new top for the model. The architecture can be seen in the "SiameseBuilder.py" file in the Siamese Network folder. I then used the Distance layer that I created to calculate the eucledian distance of the two outputs. 
 
 After all of this, my model was able to acheive an 86% accuracy on the testing set. I used the Adam optimizer with the learning rate set at 0.00005, and I used a BinaryCrossentropy loss function. I also had 3 Batch Normalization layers and one dropout layer set at 0.2. The .jpg image in the repo is a screenshot of the final results from training.
+
+To run the code, simply download the lfw file from the source below and put that file in the "Data" folder.
+
+Sources
+Dataset: http://vis-www.cs.umass.edu/lfw/
+Research Paper: Heidari, Mohsen & Fouladi, Kazim. (2020). Using Siamese Networks with Transfer Learning for Face Recognition on Small-Samples Datasets. 1-4. 10.1109/MVIP49855.2020.9116915. 
